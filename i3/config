@@ -31,8 +31,8 @@ bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 # https://github.com/addy-dclxvi/i3-starterpack
 
 # sudo apt install rofi
-bindsym $mod+slash exec rofi -show run
-bindsym $mod+d exec ~/.config/i3/rofi/bin/launcher -show run
+bindsym $mod+slash exec rofi -show drun
+bindsym $mod+d exec ~/.config/i3/rofi/bin/launcher -show window
 
 ###############################################################################
 
