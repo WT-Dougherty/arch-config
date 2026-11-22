@@ -1,8 +1,1 @@
-# ignore by default
-**/*
 
-!.gitignore
-!.gitmodules
-
-!i3
-!alacritty
