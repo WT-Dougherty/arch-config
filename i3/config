@@ -37,7 +37,6 @@ bindsym $mod+d exec ~/.config/i3/rofi/bin/launcher -show window
 ###############################################################################
 
 # AUTOSTART APPLICAITONS
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id copyq
 # exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 #exec --no-startup-id manjaro-hello
@@ -55,7 +54,6 @@ exec --no-startup-id mailspring
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id unclutter
-exec_always --no-startup-id pkill picom; picom -b
 # exec --no-startup-id spotify __scratchpad
 
 # exec --no-startup-id rambox
@@ -113,7 +111,6 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec terminal
 # bindsym $mod+Return exec alacritty
-# bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -148,7 +145,7 @@ exec --no-startup-id pa-applet
 bindsym $mod+Shift+Return exec chromium
 bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 bindsym $mod+F1 exec alacritty -e nnn
-bindsym $mod+F2 exec pcmanfm
+bindsym $mod+Shift+f exec alacritty -e yazi
 # bindsym $mod+Shift+F2 exec "killall rambox; exec 'rambox'"
 bindsym $mod+Shift+F2 exec killall 'rambox'
 bindsym $mod+F3 exec alacritty -e 'ncpamixer'
@@ -815,8 +812,6 @@ for_window [class="Kvantum Manager|qt5ct"] floating enable
 for_window [class="VirtualBox Manager|qemu|Qemu-system-x86_64"] floating enable
 for_window [title="About : Aditya Shakya|Getting Started"] floating enable
 for_window [class="copyq"] floating enable
-for_window [class="gnome-control-center"] floating enable
-for_window [class="Gnome-control-center"] floating enable
 
 # wine league
 for_window [class="Wine"] floating enable
@@ -828,3 +823,6 @@ for_window [class="riotclientux.exe"] floating enable
 for_window [class="leagueclientux.exe"] floating enable
 for_window [title="Riot Client"] floating enable
 for_window [title="League of Legends"] floating enable
+
+# picom startup
+exec_always --no-startup-id pkill picom; picom -b
