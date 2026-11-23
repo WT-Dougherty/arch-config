@@ -4,3 +4,4 @@ chromium/
 dconf/
 OpenRGB/logs
 .gsd-keyboard.settings-ported
+systemd/**/*.service
