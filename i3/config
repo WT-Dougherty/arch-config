@@ -473,7 +473,7 @@ bindsym $mod+m bar mode toggle
 #############################
 
 # Set inner/outer gaps
-gaps inner 14
+
 smart_borders on ###########
 
 
@@ -527,7 +527,7 @@ title_align center
 for_window [class=".*"] border pixel 4
 
 # Gaps (Outer gaps are added to the inner gaps)
-gaps inner 15
+gaps inner 7
 gaps outer 0
 
 # Only enable gaps on a workspace when there is at least one container
