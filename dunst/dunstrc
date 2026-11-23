@@ -1,0 +1,19 @@
+[global]
+geometry = "280x50-15+53"
+frame_width = 2
+font = JetBrains Mono Medium 10
+
+[urgency_low]
+background = "#1e222a"
+foreground = "#c8ccd4"
+frame_color = "#61afef"
+
+[urgency_normal]
+background = "#1e222a"
+foreground = "#c8ccd4"
+frame_color = "#61afef"
+
+[urgency_critical]
+background = "#1e222a"
+foreground = "#e06c75"
+frame_color = "#e06c75"
