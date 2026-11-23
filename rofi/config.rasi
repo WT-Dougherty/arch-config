@@ -1,9 +1,9 @@
 configuration {
     modi: "drun,run,window";
-    show-icons: true;
-    font: "monospace 18";
+    show-icons: false;
+    font: "monospace 12";
     dpi: 0;
-    display-drun: "Apps";
+    display-drun: "";
     display-run: "Run";
     display-window: "Windows";
     drun-display-format: "{name}";
@@ -37,19 +37,19 @@ window {
     border-color:     @yellow;
     border-radius:    8px;
     width:            42%;
-    padding:          22px;
+    padding:          12px;
 }
 
 mainbox {
-    spacing: 14px;
+    spacing: 8px;
     children: [ inputbar, listview ];
 }
 
 inputbar {
     background-color: @bg-alt;
     border-radius:    6px;
-    padding:          12px 16px;
-    spacing:          12px;
+    padding:          8px 12px;
+    spacing:          8px;
     children:         [ prompt, entry ];
 }
 
@@ -61,6 +61,7 @@ prompt {
 entry {
     placeholder:       "Search...";
     placeholder-color: @fg-muted;
+    vertical-align:    0.5;
 }
 
 listview {
@@ -68,13 +69,13 @@ listview {
     columns:      1;
     fixed-height: false;
     scrollbar:    false;
-    spacing:      6px;
+    spacing:      3px;
 }
 
 element {
-    padding:       10px 14px;
+    padding:       6px 8px;
     border-radius: 6px;
-    spacing:       12px;
+    spacing:       8px;
 }
 
 element normal.normal,
@@ -106,10 +107,6 @@ element alternate.active {
 element selected.active {
     background-color: @cyan;
     text-color:       @bg;
-}
-
-element-icon {
-    size: 26px;
 }
 
 element-text {
