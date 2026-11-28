@@ -1,4 +1,7 @@
 [submodule "alacritty/themes"]
-	path = alacritty/themes
+	path = .config/alacritty/themes
 	url = https://github.com/alacritty/alacritty-theme.git
 	branch = master
+[submodule ".config/alacritty/themes"]
+	path = .config/alacritty/themes
+	url = https://github.com/alacritty/alacritty-theme.git

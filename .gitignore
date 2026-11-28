@@ -1,7 +1,9 @@
-anthropic/
-Code/
-chromium/
-dconf/
-OpenRGB/logs
-.gsd-keyboard.settings-ported
-systemd/**/*.service
+# .config directory
+.config/anthropic/
+.config/Code/
+.config/chromium/
+.config/dconf/
+.config/OpenRGB/logs
+.config/.gsd-keyboard.settings-ported
+.config/systemd/**/*.service
+.config/obsidian/
